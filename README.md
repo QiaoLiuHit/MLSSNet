@@ -3,13 +3,14 @@
 In this paper, we propose a multi-level similarity model under a Siamese framework for robust Thermal Infrared (TIR) object tracking. Specifically, we compute different pattern similarities using the proposed multi-level similarity network. One of them focuses on the global semantic similarity and the other computes the local structural similarity of the TIR object. These two similarities complement each other and hence enhance the discriminative capacity of the network for handling distractors. In addition, we design a simple while effective relative entropy based ensemble subnetwork to integrate the semantic and structural similarities. This subnetwork can adaptive learn the weights of the semantic and structural similarities at the training stage. [Paper](https://www.researchgate.net/publication/342859300_Learning_Deep_Multi-Level_Similarity_for_Thermal_Infrared_Object_Tracking)
 ![Alt text](./Framework.jpg)
 ## Download
-*  Download the proposed TIR training dataset from [here](https://mega.nz/file/80J23A5T#pFYFv_y5NFNVnsJ4zU3a6OH3kPyRwLZebKZV1FjoD-w). [News] We have extended this dataset to a bigger [TIR object tracking training dataset](https://github.com/QiaoLiuHit/MMNet). 
-*  Download the tracking raw results and several trained models from [here](https://mega.nz/file/c5oT0ZpB#yrb1HEn5xjTOdl1KyoZHCaYcBvJjMweSNj0Vx4zRJ4o).
+*  Download the proposed TIR training dataset from [here](https://mega.nz/file/80J23A5T#pFYFv_y5NFNVnsJ4zU3a6OH3kPyRwLZebKZV1FjoD-w). 
+*  [News] We have extended this dataset to a bigger [TIR object tracking training dataset](https://github.com/QiaoLiuHit/MMNet). 
+*  Download the tracking raw results and several trained models from [baidu disk](https://pan.baidu.com/s/1SF2PFnKFd-_LlBMFsmGS6w) using psd: b0w0 or [dubox](https://dubox.com/s/17sFZX117qPXj0Tn9i3MPWg) using psd:sxwq.
 
 ## Usage
 ### Tracking
 1. Prerequisites: Ubuntu 14, Matlab R2017a, GTX1080, CUDA8.0.
-2. Download our trained models from [here](https://mega.nz/file/c5oT0ZpB#yrb1HEn5xjTOdl1KyoZHCaYcBvJjMweSNj0Vx4zRJ4o) and put them into the `src/tracking/pretrained` folder .
+2. Download our trained models and put them into the `src/tracking/pretrained` folder .
 3. Run the `run_demo.m` in `src/tracking` folder to test a TIR sequence using a default model.
 4. Test other TIR sequences, please download the PTB-TIR dataset from [here](https://github.com/QiaoLiuHit/PTB-TIR_Evaluation_toolkit).
 ### Training
